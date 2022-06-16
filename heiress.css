@@ -1,0 +1,449 @@
+/* *******GLOBALS****** */
+body, html{
+    width: 100%;
+ margin: 0;
+ padding:0;
+ background-image: linear-gradient(to right, rgba(255,0,0,0), rgb(38, 37, 35));
+ font-family: 'Montserrat', sans-serif;
+
+}
+
+h2{padding:0;
+    margin:0;
+    font-family:'Amatic SC', cursive;
+
+}
+
+p{
+    padding: 0;
+    margin: 0;
+}
+
+/* img{
+    width: 15rem;
+    height: 10rem;
+} */
+button{
+    padding: 3%;
+}
+
+/* ****CONTAINER START***** */
+
+#container{
+    height: calc(100%-100px);
+    border: none;
+    box-sizing: border-box;
+}
+
+/* ******* NAV & NAV CONTENTS ***** */
+
+nav{
+    width: 100%;
+    height: 100px;
+    color:white;
+    background-image: linear-gradient(to right, rgba(254, 253, 253, 0), rgb(3, 3, 3));
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    /* position: sticky; */
+    margin-bottom: 20px;
+    box-shadow: 1px 1px 3px black;
+
+    
+}
+.logotext{
+    color:rgb(16, 7, 7);
+    font-family: 'Amatic SC', cursive;
+    padding: 3px;
+    font-size: xx-large;
+}
+
+.menuitemdiv{
+    width: 25rem;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: black; */
+}
+.menuitem{
+    padding: 5px;
+}
+input{
+    background-color: rgb(242, 240, 234);
+    border-radius: 3px;
+    height: 2rem;
+    border: none;
+    /* box-shadow: inset 1px 1px 3px blue; */
+
+}
+input:hover{
+border-inline: 3px solid rgb(231, 229, 160);
+}
+
+/* .fa-envelope{
+   
+} */
+/* ****** NAV & NAV CONTENTS END ******* */
+
+/*********** HEADER START ***********/
+
+.mainheader{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 255, 255);
+    border: 0px solid black;
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 20px;
+    /* background-image: url(./image/header\ shop\ med.webp); */
+    background-size: cover;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #ccc, #fff 30%);
+    background-repeat: no-repeat;
+}
+
+.mainheader~img{
+    width: 10%;
+}
+.mainheadrdiv{
+    width: 40rem;
+    background-color: rgb(16, 7, 7,);
+    /* border: 1px solid black; */
+    margin-top: 20px;
+}
+
+.servicediv{
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 20px;
+    box-sizing: border-box;
+    border: 1px solid white;
+    
+
+}
+
+/* .servicediv:nth-child(odd){
+    --x-y1: 100% 85%;
+    --x-y2: 70% 93%;
+    --x-y3: 25% 85%;
+    --x-y4: 0% 90%; */
+
+
+
+
+
+
+.servicesitem{
+    border: 0px solid black;
+    margin: 5px;
+    box-shadow: 1px 1px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.servicesitem:hover{
+    transform: scale(1,1.1);
+}
+
+
+ .services{
+     grid-column-start: 1;
+     grid-column-end: 3;
+    
+    background-color: red;
+    background-image: url(./image/make-up\ bg.webp);
+    background-size: cover;
+    background-position: bottom right;
+   
+} 
+.services>h1{
+    color: white;
+    background-color: rgb(16, 7, 7,0.4);
+    box-shadow: 1px 1px 1px #fff;
+}
+
+.servicesitem>h1{
+    color: white;
+    background-color: rgb(16, 7, 7,0.3);
+    padding: 5px;
+    box-shadow: 1px 1px 1px #fff;
+}
+
+.servicesitem1{
+    grid-column-start: 3;
+    grid-column-end: 5;
+    background-image: url(./image/rentals.webp);
+    background-size: cover;
+    background-position: center;
+    
+}
+.servicesitem2{
+    /* grid-row-start: 2;
+   grid-row-end:3 ; */
+   grid-column-start: 1;
+   grid-column-end: 3;
+   background-image: url(./image/lady\ in\ black.webp);
+   background-size: cover;
+   background-position: center;
+
+}
+
+.servicesitem3{
+    grid-column-start: 3;
+   grid-column-end: 5;
+   background-image: url(./image/season\ sales.webp);
+   background-size: cover;
+    background-position: center;
+
+}
+
+/* ******SHOP ITEM DIV ****** */
+
+.shopitemdiv{
+    display: grid;
+    grid-template-columns: repeat(1, 300px);
+    grid-template-rows: 6,1fr;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+.shopitems{
+    display: flex;
+    box-sizing: content-box;
+    border: 0px solid rgb(242, 232, 232);
+    border-radius: 1px;
+    box-shadow: 1px 1px 3px black;
+    align-items: center;
+    flex-direction: row;
+    box-sizing: border-box;
+
+    
+}
+.shopitem{
+    box-sizing: content-box;
+    display: flex;
+    justify-content: center;
+}
+
+.shopimg{
+    box-sizing: border-box;
+    padding: 5px;
+}
+/* **** CHAT TRAY AND ICONS******* */
+.chaticon{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(242, 233, 233, 0.6);
+    position: relative;
+    position: fixed;
+    left: 95%;
+    z-index: 1;
+    box-shadow: 1px 1px  5px;
+}
+
+.chaticon1{
+    width: 50px;
+    height: 50px;
+    background-color: rgb(242, 233, 233, 0.6);
+    position: relative;
+    position: fixed;
+    left: 95%;
+    top: 80%;
+    z-index: 1;
+    box-shadow: 1px 1px  5px;}
+
+.chattray{
+    width: 200px;
+    height: 400px;
+    background-color: rgba(13, 5, 5, 0.6);
+    position: relative;
+    position: fixed;
+    left: 80%;
+    top: 40%;
+    z-index: 1;
+    box-shadow: 1px 1px  5px;
+
+}
+
+/* ******CHAT TRAY & ICONS END****** */
+
+.material-icons-two-tone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5%;
+    font-size: xx-large;
+}
+
+article{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 10px;
+    width: 100%;
+    height: 500px;
+    /* background-color: bisque; */
+    padding-bottom: 20px;
+    background: linear-gradient(to bottom, #ccc, #fff 30%);
+    
+}
+
+.articleitem{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.articleitem1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    background-image: url(./image/header\ shop\.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.articleitem2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    background-image: url(./image/rentals.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.articleitem3{
+    grid-column-start:1 ;
+    grid-column-end: 2;
+    background-image: url(./image/thrift.webp);
+    background-size: cover;
+    background-position: center;
+}
+.articleitem4{
+    grid-column-start:2 ;
+    grid-column-end: 3;
+    background-image: url(./image/makeup\ med.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.articleitemh1{
+    font-size: xx-large;
+
+}
+
+.articletxt{
+    text-decoration: underline;
+
+}
+
+.articlebtn{
+    background-color:rgba(12, 2, 2, 0.6) ;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    box-sizing: border-box;
+}
+.articlebtn:hover{
+   background-color: rgba(102, 3, 3, 0.6);
+   box-shadow: 1px 1px  5px white;
+   transition: all;
+}
+
+.icondiv{
+    display: flex;
+}
+
+.icondiv>p{
+    margin: 0;
+    padding: 0;
+}
+.material-icons{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* *******FOOTER START ******* */
+
+footer{
+    display: grid;
+    width: 100%;
+    height: 200px;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    /* background-color: antiquewhite; */
+    background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(38, 37, 35));
+    flex-wrap: wrap;
+
+}
+
+.footeritems{
+    /* background-color: azure; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerlogotxt{
+    font-size: 3rem;
+    text-shadow: 1px 1px  #fff;
+}
+
+/* .footerlogotxt::after{
+    content: " ";
+    background-color: red;
+    position: absolute;
+    width: 12rem;
+    height: .3rem;
+    border-radius: 2px;
+    bottom:-80% ;
+    left: 8%;
+    /* transform: translateX(20%); */
+    
+.footerlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff;
+}
+
+.footerinput{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    */
+    align-items: center;
+}
+.finput{
+    width: 90%;
+    /* padding: 10px; */
+    margin: 10px;
+
+}
+.footerbtn{
+    width: 30%;
+    padding: 3%;
+    margin-top: 10px;
+   
+
+}
+
+@media screen and (max-width:700px) {
+    .navinput{
+        display: none;
+    }
+    
+}
+
+.divv{
+    background-color: red;
+    width: 200px;
+    height: 300px;
+    border-radius: 70%;
+}
